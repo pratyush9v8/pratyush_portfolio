@@ -114,7 +114,7 @@ a.active,a:hover{
     .pro{
         height: 95vh;
         width: 100%;
-        background-color: rgb(63, 63, 63);
+        background-color: #3e2f5b;
         display: flex;
         justify-content: center;
         align-items: center;
