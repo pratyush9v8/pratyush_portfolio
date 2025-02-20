@@ -113,7 +113,7 @@ a.active,a:hover{
         }
         
     .d a{
-        color: white;
+        color: rgb(248, 244, 244);
         text-decoration: none;
         font-size: 1.5rem;
         text-align: left;
@@ -134,7 +134,7 @@ a.active,a:hover{
         background-color:  #3e2f5b;
     }
     .box p{
-        color: rgb(96, 93, 93);
+        color: rgb(248, 244, 244);
         font-size: 0.85rem;
     }
     }
@@ -154,7 +154,7 @@ a.active,a:hover{
     }
     
     .d a{
-        color: rgb(89, 89, 213);
+        color: rgb(248, 244, 244);
         text-decoration: none;
         font-size: 2rem;
         text-align: left;
@@ -175,7 +175,7 @@ a.active,a:hover{
         text-align: left;
     }
     .box p{
-        color: rgb(96, 93, 93);
+        color: rgb(248, 244, 244);
         font-size: 0.85rem;
     }
 }
