@@ -113,12 +113,13 @@ a.active,a:hover{
         }
         
     .d a{
-        color: rgb(89, 89, 213);
+        color: white;
         text-decoration: none;
         font-size: 1.5rem;
         text-align: left;
     
     }
+        
     .d{
         /* position: relative; */
         left: 5px;
