@@ -1,33 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About-me_Pratyush</title>
-    <link rel="stylesheet" href="aboutme.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-</head>
-<body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check"  class="checkbtn">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-    <label class="logo" >Pratyush</label>
-        <ul>
-        <li><a  href="index.html">Home</a></li>
-        <li><a href="project.html">Project</a></li>
-        <li><a class="active"  href="aboutme.html">About Me</a></li>
-        <li><a  href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <section> <div class="pro"></div>
-    <!-- <div class="pro"> -->
-        <!-- <div class="cv" style="display: flex; justify-content: center; width: 100%;"><div style="height: 50px; width: 120px; background-color: rgb(100, 100, 228);" ><a href="Tesla_Final_Resume1.pdf">My Resume</a></div>
-        <br>
-        <p>My name is Pratyush Kumar.<br>I'm a Computer Science student at NITPatna specialization in cyber security.<br>I have a deep interest in Web/App Develoment,network security and Programing.<br></p> -->
-    <!-- </div> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About‑me_Pratyush</title>
 
-   </section>
+  <!-- Styles -->
+  <link rel="stylesheet" href="aboutme.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!--‑‑‑‑ NAVBAR ‑‑‑‑-->
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <label class="logo">Pratyush</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a class="active" href="aboutme.html">About&nbsp;Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+    </ul>
+  </nav>
+
+  <!--‑‑‑‑ ABOUT ME SECTION ‑‑‑‑-->
+  <section class="container py-5">
+    <h2 class="mb-4">About Me</h2>
+
+    <p>
+      Hi, I'm <strong>Pratyush Kumar</strong>, a passionate and detail‑oriented
+      developer who loves building clean and interactive web applications. I specialize in
+      <strong>full‑stack web development</strong> and focus on crafting efficient,
+      user‑friendly solutions that make an impact.
+    </p>
+
+    <p>
+      I enjoy learning new technologies, solving real‑world problems, and writing
+      maintainable code. My current stack includes
+      <strong>C++, JavaScript, Node.js, Express, MongoDB,<br />and React</strong>, along with
+      <strong>Bootstrap, EJS, Git</strong>, and <strong>REST APIs</strong>.
+    </p>
+<br>
+    <h4 class="mt-5">What I Do</h4>
+    <ul class="skills">
+      <li>Full-Stack Web Development</li>
+      <li>Responsive UI/UX Design</li>
+      <li>Backend API Development</li>
+      <li>Code Debugging & Optimization</li>
+      <li>Collaborative Project Work</li>
+    </ul>
+<br>
+    <h4 class="mt-5">Beyond Tech</h4>
+    <p>
+      When I’m not coding, you’ll find me reading about space tech, exploring UI design
+      ideas, or testing productivity hacks. Continuous learning keeps me motivated both
+      personally and professionally.
+    </p>
+<br>
+    <h4 class="mt-5">Let's Connect</h4>
+    <div class="mt-3 btn‑group">
+      <a href="/Tesla_Final_Resume1.pdf" download class="btn btn-primary me-2">
+        📄 Download&nbsp;Resume
+      </a>
+      <a href="https://github.com/Pratyushkumar9v8?tab=repositories" target="_blank" class="btn btn-dark me-2">
+        <i class="fa-brands fa-github"></i>&nbsp;GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/pratyush-kumar9v8/" target="_blank" class="btn btn-outline-primary">
+        <i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn
+      </a>
+    </div>
+  </section>
+  <script>
+  const faders = document.querySelectorAll(".fade-in");
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function (entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
 </body>
 </html>
