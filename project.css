@@ -145,7 +145,7 @@ a.active,a:hover{
 
 @media(min-width:858px){
     .pro{
-        height: 95vh;
+        height: 100%;
         width: 100%;
         background-color: #3e2f5b;
         display: flex;
